@@ -1,0 +1,248 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Sofadi+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    scroll-behavior: smooth;
+}
+/* @keyframes main {
+    0%{
+        transform: translateX(10rem) translateY(10rem);
+        font-size: 14rem;
+        padding: 0;
+    }    
+    75%{
+        transform: translateX(22rem);
+    }
+}
+@keyframes content{
+    0%{
+        opacity: 0;
+    }
+    50%{
+        opacity: 0;
+    }
+    100%{
+        opacity:1;
+    }
+} */
+.brand{
+    width: 100%;
+    animation-name: main;
+    animation-duration: 6s;
+}
+
+header {
+    font-family: "Oswald", sans-serif;
+    background: url(https://cdn.pixabay.com/photo/2024/09/02/15/06/sunset-9017041_1280.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    
+}
+header nav{
+    display: flex;
+    justify-content: space-between;
+    
+}
+p{
+    width: 100%;
+    font-family: "Sofadi One", system-ui;
+    font-size: 5rem;
+    padding-left:2rem;
+    color:rgb(7, 8, 7);
+}
+ol{
+    padding-top:3rem;
+    padding-right: 5rem;
+    display: inline-flex;
+    gap:2.5rem;
+    list-style: none;
+    animation-name: content;
+    animation-duration: 10s;
+    
+}
+a{
+    text-decoration: none;
+    color:rgb(3, 12, 5);
+    font-weight: 500;
+}
+bottom{
+    padding-top: 26rem;
+    padding-bottom: 14rem;
+    display: flex;
+    flex-direction: column;
+    gap:2rem;
+    justify-content: center;
+    align-items: center;
+    color:white;
+    text-align: center;
+}
+.clean{
+    font-size: 6rem;
+    font-weight: 1000;
+}
+.qoutes{
+    font-size: 1rem;
+    line-height: 1.5rem;
+    font-family: "Lato", sans-serif;
+    font-weight: 500;
+}
+span{
+    color: yellow;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: 500;
+}
+.click{
+    display: flex;
+    gap:3rem;
+    padding:2rem;
+}
+button{
+    font-size: large;
+    width:15rem;
+    height: 3.8rem;
+    /* border: 0.1rem solid white; */
+    border: none;
+    color: white;
+    border-radius: 0.2rem;
+}
+about{
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+    
+    padding:1rem;
+
+}
+heading{ 
+    font-family: "Oswald", sans-serif;
+    text-align: center;
+    font-size: 3rem;
+    padding-top: 2rem;
+}
+about para{
+    font-family: "Lato", sans-serif;
+    text-align: center;
+    line-height: 1.5rem;
+    font-weight: 500;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+.about div{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    
+}
+i{
+    padding-right: 0.5rem;
+}
+stats{
+    padding:1rem;
+    display: flex;
+    flex-direction: column;
+}
+stats para{
+    padding-top: 0.5rem;
+    text-align: left;
+}
+project{
+    background: url(https://149842022.v2.pressablecdn.com/illdy/wp-content/themes/illdy/layout/images/front-page/pattern.png);
+    background-repeat: repeat;
+    display: flex;
+    flex-direction: column;
+}
+project para{
+    padding-top: 0.5rem;
+    padding-bottom:5rem;
+    text-align: center;
+}
+project div{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+}
+div img{
+    width:100%;
+    height: 100%;
+    object-fit: cover;
+}
+.test{
+    background: url(https://cdn.pixabay.com/photo/2024/01/10/11/09/mountain-8499331_1280.jpg), linear-gradient(rgba(14, 79, 41, 0.5),rgba(0,0,0,0.5));
+    background-blend-mode: overlay;
+    background-size: cover;
+    background-attachment: scroll;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color:white
+}
+.test div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.test img{
+    width: 127px;
+    height: 127px;
+    border-radius: 50%;
+    padding:2rem;
+}
+.test q{
+    background-color: rgba(14, 79, 41, 0.5);
+    padding: 2rem;
+    border-radius: 1rem;
+    width:50rem;
+    font-family: "Poppins", sans-serif;
+    line-height: 1.5rem;
+    font-weight: 200;
+    margin-bottom: .2rem;
+    text-align: center;
+}
+.triangle {
+	width: 0;
+	height: 0;
+	border-left: 25px solid transparent;
+	border-right: 25px solid transparent;
+    border-top: 40px solid rgba(14, 79, 41, 0.5);
+	
+}
+.test>div heading{
+    font-size: 2rem;
+    font-weight: 600;
+}
+dots{
+    display:flex;
+    flex-direction: row;
+    padding:1rem;
+    
+    
+}
+.owl-dot{
+    width: 0.8rem;
+    height: 0.8rem;
+    background-color: #fff;
+    margin:0.7rem;
+    border-radius: 50%;
+    border: 1px solid transparent;
+    cursor: pointer;
+}
+.owl-dot:hover{
+    background-color: transparent;
+    border-color: rgb(248, 246, 246);
+}
+section
+
