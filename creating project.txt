@@ -1,0 +1,27 @@
+create a nodejs project 
+	npm init -- this command create the package.json file in this folder all the meta data is there about our project like below. 
+				package name: (look) ,
+				version: (1.0.0) , 
+				description: , 
+				entry point:(index.js) , 
+				git repository:-- This details are available there.
+
+Install the need packages for this project
+	npm i express mongoose cors body-parser path -- this command install all the package in one line.
+	npm i .-- this command use clone the project from github that project already have the package.json so use this to install all need packages
+
+		Express:
+			descrep: express is a fast , minimalist web framework for Node.js.
+			usage: It simplifies the process of building web application and 
+			       APIs by providing tools to handle Http requests,routes,middleware.
+
+			key Features:
+				Routing: Http methods(GET,POST,PUT)
+				Middleware:Add middleware functions(eg.,parsing request bodies, authentication).
+		Mongoose:
+			Descrep:Mongoose is an object Data Modeling(ODM) library for MongoDB and Node.js.
+			usage: Mongoose allows you to define schemas for your MongoDB collections(Table).
+			
+			key Features:
+				schemas:structure and rules of your MongoDB documents
+				query-building:chainable and flexible query-building methods.
