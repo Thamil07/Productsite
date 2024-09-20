@@ -7,13 +7,12 @@
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
-      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
     />
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="style.css" />
     <script src="script.js" async></script>
+    <!-- Lenis smooth scroll library -->
+    <script src="https://cdn.jsdelivr.net/npm/@studio-freight/lenis@latest/bundled/lenis.js"></script>
   </head>
   <body>
     <div class="parent">
@@ -30,7 +29,7 @@
             <li><a href="">Contact_Us</a></li>
           </ol>
         </nav>
-        <bottom>
+        <bottom >
           <div class="clean">
             Clean<span>.</span>Slick<span>.</span>Pixel Perfect
           </div>
@@ -47,7 +46,7 @@
           </div>
         </bottom>
       </header>
-      <about class="about">
+      <about data-aos="zoom-in-up" class="about">
         <heading>About</heading>
         <para
           >A forest is a large area covered primarily with trees and
@@ -77,40 +76,36 @@
           </stats>
         </div>
       </about>
-      <project class="project">
+      <project data-aos="zoom-in-down" class="project">
         <heading>Project</heading>
         <para>You'll love our work. Check it out!</para>
-        <div>
-          <img
-            data-aos="fade-up"
+        <div >
+          <img data-aos="fade-up"
             src="https://cdn.pixabay.com/photo/2023/03/25/20/30/podcast-7876792_1280.jpg"
             alt=""
           />
-          <img
-            data-aos="fade-down"
+          <img data-aos="fade-down"
             src="https://cdn.pixabay.com/photo/2022/01/25/12/16/laptop-6966045_1280.jpg"
             alt=""
           />
-          <img
-            data-aos="fade-up"
+          <img data-aos="fade-up"
             src="https://cdn.pixabay.com/photo/2022/11/03/15/24/coffee-7567749_1280.jpg"
             alt=""
           />
-          <img
-            data-aos="fade-down"
+          <img data-aos="fade-down"
             src="https://cdn.pixabay.com/photo/2021/10/11/17/54/technology-6701504_1280.jpg"
             alt=""
           />
         </div>
       </project>
       <div class="test">
-        <heading>Testimonials</heading>
-        <div class="profile">
-          <img
+        <heading data-aos="fade-left">Testimonials</heading>
+        <div  class="profile">
+          <img data-aos="fade-right"
             src="https://img.freepik.com/free-vector/vintage-eagle-head-mascot-colorful-concept_225004-1575.jpg?size=626&ext=jpg"
             alt="Profile"
           />
-          <q>
+          <q data-aos="fade-left">
             Awesome theme with great design and awesome support. If you don’t
             know how to code your own WordPress theme, but you still want a
             good-looking website for your business, Illdy might be exactly what
@@ -138,7 +133,7 @@
           <div
             data-aos="fade-down"
             data-aos-easing="linear"
-            data-aos-duration="1500">
+            data-aos-duration="1000">
             <i class="fa-solid fa-pen"></i>
             <h1>Web Design</h1>
             <para>
@@ -150,7 +145,7 @@
           <div
             data-aos="fade-down"
             data-aos-easing="linear"
-            data-aos-duration="3000"
+            data-aos-duration="2000"
           >
             <i class="fa fa-code"></i>
             <h1>WEB DEVELOPMENT</h1>
@@ -163,7 +158,7 @@
           <div
             data-aos="fade-down"
             data-aos-easing="linear"
-            data-aos-duration="4500">
+            data-aos-duration="3000">
             <i class="fa-brands fa-searchengin"></i>
             <h1>SEO Analisys</h1>
             <para>
@@ -174,10 +169,28 @@
           </div>
         </section>
       </service>
+      
     </div>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
       AOS.init();
+    </script>
+
+    <!-- Lenis Initialization Script -->
+    <script>
+      const lenis = new Lenis({
+        duration: 1,
+        easing: (t) => t,
+        smooth: true,
+        smoothTouch: true
+      });
+
+      function raf(time) {
+        lenis.raf(time);
+        requestAnimationFrame(raf);
+      }
+
+      requestAnimationFrame(raf);
     </script>
   </body>
 </html>

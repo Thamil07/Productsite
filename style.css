@@ -11,16 +11,19 @@ body {
     width: 100%;
     display: flex;
     flex-direction: column;
-    scroll-behavior: smooth;
+    
 }
-/* @keyframes main {
+@keyframes main {
     0%{
         transform: translateX(10rem) translateY(10rem);
         font-size: 14rem;
         padding: 0;
-    }    
-    75%{
+    }
+    25%{
         transform: translateX(22rem);
+    }
+    100%{
+        transform: translateX(0rem);
     }
 }
 @keyframes content{
@@ -33,11 +36,28 @@ body {
     100%{
         opacity:1;
     }
-} */
+}
+@keyframes slider {
+    0%{
+        background: url(https://cdn.pixabay.com/photo/2024/04/09/22/28/trees-8686902_1280.jpg);
+    }   
+    25%{
+        background: url(https://cdn.pixabay.com/photo/2023/10/24/19/09/nevada-8338929_1280.jpg);
+    }
+    50%{
+        background: url(https://cdn.pixabay.com/photo/2024/08/19/15/01/sunflowers-8980921_1280.jpg);
+    } 
+    75%{
+        background: url(https://cdn.pixabay.com/photo/2024/08/29/10/01/nature-9006428_1280.jpg);
+    }  
+    100%{
+        background: url(https://cdn.pixabay.com/photo/2024/09/05/08/24/mountain-9024209_1280.jpg);
+    }
+}
 .brand{
     width: 100%;
     animation-name: main;
-    animation-duration: 6s;
+    animation-duration: 4s;
 }
 
 header {
@@ -49,6 +69,9 @@ header {
     height: 100%;
     display: flex;
     flex-direction: column;
+    overflow-x: hidden;
+    
+    
     
 }
 header nav{
@@ -70,7 +93,7 @@ ol{
     gap:2.5rem;
     list-style: none;
     animation-name: content;
-    animation-duration: 10s;
+    animation-duration: 8s;
     
 }
 a{
@@ -79,7 +102,7 @@ a{
     font-weight: 500;
 }
 bottom{
-    padding-top: 26rem;
+    padding-top: 22rem;
     padding-bottom: 14rem;
     display: flex;
     flex-direction: column;
@@ -124,6 +147,7 @@ about{
     /* align-items: center; */
     
     padding:1rem;
+    
 
 }
 heading{ 
@@ -163,6 +187,7 @@ project{
     background-repeat: repeat;
     display: flex;
     flex-direction: column;
+    overflow: hidden;
 }
 project para{
     padding-top: 0.5rem;
@@ -188,7 +213,8 @@ div img{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    color:white
+    color:white;
+    animation: slider 20s linear infinite;
 }
 .test div{
     display: flex;
@@ -244,5 +270,32 @@ dots{
     background-color: transparent;
     border-color: rgb(248, 246, 246);
 }
-section
+.service{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-image: url(https://cdn.pixabay.com/photo/2018/04/28/22/03/tree-3358468_1280.jpg);
+}
+section{
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    padding:1.5rem;
+    
+
+}
+section > div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 2rem;
+    text-align: center;
+    align-items: center;
+    padding:3rem;
+    background-color:rgba(103, 85, 205, 0.493);
+    border-radius: 1rem;
+
+}
+
+
 
